@@ -18,7 +18,7 @@
 
 - сбор, анализ и декомпозиция требований;
 - функциональные и нефункциональные требования;
-- User Stories и Варианты использования;
+- User Stories и Use Case;
 - бизнес-правила и альтернативные сценарии;
 - проектирование REST API;
 - HTTP, JSON, авторизация и коды ответов;
@@ -52,7 +52,7 @@ Business problem
       ↓
 Требования / User Stories
       ↓
-Варианты использования + Бизнес-правила
+Use Case + Бизнес-правила
       ↓
 Модель данных
       ↓
@@ -81,7 +81,7 @@ Technical Documentation
 
 - [Требования](docs/requirements.md)
 - [Бизнес-правила](docs/business-rules.md)
-- [Варианты использования](docs/use-cases.md)
+- [Use Case](docs/use-cases.md)
 - [REST API](docs/api.md)
 - [Интеграции](docs/integrations.md)
 - [Модель данных](docs/data-model.md)
