@@ -1,0 +1,10 @@
+@startuml
+title U-Verse — Payment State
+
+[*] --> CREATED
+CREATED --> WAITING_FOR_PAYMENT : payment initiated
+WAITING_FOR_PAYMENT --> PAID : validated webhook / success
+WAITING_FOR_PAYMENT --> CANCELED : cancellation / failure
+PAID --> [*]
+CANCELED --> [*]
+@enduml

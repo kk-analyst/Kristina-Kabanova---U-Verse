@@ -1,0 +1,13 @@
+@startuml
+title U-Verse — Teacher Application State
+
+[*] --> NEW
+NEW --> IN_REVIEW : start review
+IN_REVIEW --> INTERVIEW_INVITED : invite
+IN_REVIEW --> REVISION_REQUIRED : request revision
+REVISION_REQUIRED --> IN_REVIEW : resubmission
+IN_REVIEW --> APPROVED : approve
+IN_REVIEW --> REJECTED : reject
+APPROVED --> ARCHIVED : archive
+REJECTED --> ARCHIVED : archive
+@enduml

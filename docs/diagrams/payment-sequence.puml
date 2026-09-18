@@ -1,0 +1,37 @@
+@startuml
+title U-Verse — Payment Sequence
+
+actor Student
+participant "Mobile/Web Frontend" as FE
+participant "U-Verse Backend" as BE
+database "U-Verse DB" as DB
+participant "RaifPay" as PAY
+
+Student -> FE: Start payment
+FE -> BE: POST create payment
+activate BE
+BE -> DB: Save payment
+activate DB
+DB --> BE: Payment created
+deactivate DB
+BE -> PAY: Create external payment
+PAY --> BE: Payment form/link
+BE --> FE: Payment form/link
+deactivate BE
+
+FE -> PAY: Complete payment
+PAY -> BE: POST webhook
+activate BE
+BE -> BE: Validate webhook
+BE -> DB: Compare amount + update status
+DB --> BE: Saved
+BE --> PAY: HTTP 200
+deactivate BE
+
+FE -> BE: GET payment status
+activate BE
+BE -> DB: Read status
+DB --> BE: Current status
+BE --> FE: Status
+deactivate BE
+@enduml
