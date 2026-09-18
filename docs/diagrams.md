@@ -53,3 +53,13 @@ U-Verse → DB: synchronize
 - регистрация/начисление в системе лояльности.
 
 При добавлении исходников диаграмм их следует хранить в PlantUML/BPMN-формате рядом с визуализацией.
+
+
+## Визуальные диаграммы из исходного документа
+
+В репозиторий добавлены визуальные версии диаграмм, проработанных в исходных материалах U-Verse:
+
+- [UML State — статусная модель заявки](images/uml-state-application.svg)
+- [UML Sequence — возврат пользователя после оплаты через RaifPay](images/payment-sequence.svg)
+- [UML Sequence — создание и подписание платёжного реестра в Т-Банке](images/tbank-sequence.svg)
+- [Диаграмма контекста U-Verse](images/architecture-context.svg)
