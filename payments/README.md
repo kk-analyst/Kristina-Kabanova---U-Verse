@@ -1,10 +1,10 @@
-# Course Payments
+# Оплата курсов
 
-## Business context
+## Контекст бизнеса
 
 Студент покупает курс и при оформлении заказа может применить промокод. Оплата выполняется через внешнего платёжного провайдера.
 
-## Main flow
+## Основной сценарий
 
 ```text
 Student
@@ -26,7 +26,7 @@ DB status update
 Frontend status request
 ```
 
-## Key design decisions
+## Ключевые проектные решения
 
 ### Frontend не устанавливает PAID
 
@@ -40,18 +40,18 @@ Frontend status request
 
 После возврата пользователя Frontend получает актуальный статус через Backend; синхронный запрос к провайдеру для каждого чтения не выполняется.
 
-## Status model
+## Модель статусов
 
 - CREATED
 - WAITING_FOR_PAYMENT
 - PAID
 - CANCELED
 
-## Errors
+## Ошибки
 
 Проработаны сценарии 403, 500, 502, 504 и некорректного webhook.
 
-## Artifacts
+## Артефакты
 
 - [API](../docs/api.md)
 - [Integrations](../docs/integrations.md)
