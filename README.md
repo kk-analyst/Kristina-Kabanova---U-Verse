@@ -18,7 +18,7 @@
 
 - сбор, анализ и декомпозиция требований;
 - функциональные и нефункциональные требования;
-- User Stories и Use Cases;
+- User Stories и Варианты использования;
 - бизнес-правила и альтернативные сценарии;
 - проектирование REST API;
 - HTTP, JSON, авторизация и коды ответов;
@@ -50,22 +50,22 @@
 ```text
 Business problem
       ↓
-Requirements / User Stories
+Требования / User Stories
       ↓
-Use Cases + Business Rules
+Варианты использования + Бизнес-правила
       ↓
-Data Model
+Модель данных
       ↓
 API Contract
       ↓
-Integration
+Интеграция
       ↓
-States + Errors + Edge Cases
+States + Ошибки + Edge Cases
       ↓
 Technical Documentation
 ```
 
-## Integrations
+## Интеграции
 
 В проектных материалах проработаны интеграционные сценарии:
 
@@ -79,14 +79,14 @@ Technical Documentation
 
 ## System analysis artifacts
 
-- [Requirements](docs/requirements.md)
-- [Business Rules](docs/business-rules.md)
-- [Use Cases](docs/use-cases.md)
+- [Требования](docs/requirements.md)
+- [Бизнес-правила](docs/business-rules.md)
+- [Варианты использования](docs/use-cases.md)
 - [REST API](docs/api.md)
-- [Integrations](docs/integrations.md)
-- [Data Model](docs/data-model.md)
-- [Diagrams](docs/diagrams.md)
-- [Testing & Error Handling](docs/testing-and-errors.md)
+- [Интеграции](docs/integrations.md)
+- [Модель данных](docs/data-model.md)
+- [Диаграммы](docs/diagrams.md)
+- [Тестирование & Обработка ошибок](docs/testing-and-errors.md)
 - [Traceability matrix](docs/traceability.md)
 - [Architecture & decisions](docs/architecture-decisions.md)
 
@@ -120,7 +120,7 @@ Technical Documentation
 **API:** REST, JSON, HTTP, Swagger/OpenAPI, Postman  
 **Data:** SQL, ER/data modeling, DBeaver, dbdiagram.io  
 **Project work:** Jira, Confluence  
-**Integration concepts:** webhooks, Kafka, polling, external REST APIs
+**Интеграция concepts:** webhooks, Kafka, polling, external REST APIs
 
 ## AI-assisted workflow
 
@@ -134,6 +134,6 @@ AI использовался как инструмент структуриро
 
 ### Навигация
 
-**[Requirements](docs/requirements.md)** · **[API](docs/api.md)** · **[Integrations](docs/integrations.md)** · **[Data Model](docs/data-model.md)** · **[Testing](docs/testing-and-errors.md)**
+**[Требования](docs/requirements.md)** · **[API](docs/api.md)** · **[Интеграции](docs/integrations.md)** · **[Модель данных](docs/data-model.md)** · **[Тестирование](docs/testing-and-errors.md)**
 
-**[Loyalty](loyalty/README.md)** · **[Payments](payments/README.md)** · **[Teacher Recruitment](teacher-recruitment/README.md)**
+**[Система лояльности](loyalty/README.md)** · **[Оплата курсов](payments/README.md)** · **[Найм преподавателя](teacher-recruitment/README.md)**
