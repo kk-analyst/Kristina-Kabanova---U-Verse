@@ -77,7 +77,7 @@ API Contract
 
 Подробнее: [Интеграции](docs/integrations.md).
 
-## System analysis artifacts
+## Артефакты
 
 - [Требования](docs/requirements.md)
 - [Бизнес-правила](docs/business-rules.md)
@@ -114,7 +114,7 @@ API Contract
     └── README.md
 ```
 
-## Tools
+## Стек 
 
 **Documentation & modeling:** Markdown, PlantUML, BPMN, UML, Figma, Draw.io 
 **API:** REST, JSON, HTTP, Swagger/OpenAPI, Postman  
@@ -122,11 +122,11 @@ API Contract
 **Project work:** Jira, Confluence  
 **Интеграция concepts:** webhooks, Kafka, polling, external REST APIs
 
-## AI-assisted workflow
+## Использование AI
 
 AI использовался как инструмент структурирования документации. Архитектурные решения, требования, бизнес-правила и итоговые артефакты мной проверялись и редактировались.
 
-## Contact
+## Контакты
 
 - Email — laguna131kabanova@yandex.ru
 
